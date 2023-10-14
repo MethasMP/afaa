@@ -19,10 +19,14 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
     //this.productId = this.productsService.getProductById(this.route.snapshot.paramMap.get('id'));
     this.productId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.product = this.productsService.getAllproduct().find(x => x.p_id == 22)
+    this.product = this.productsService.getAllproduct().find(x => x.p_id == 14)
     console.log(this.product);
   }
   getAllProducts(){
     return this.productsService.getAllproduct();
+  }
+  addComment() {
+    // Make a POST request to the database to add the new comment
+    return this.productsService.addComment();
   }
 }

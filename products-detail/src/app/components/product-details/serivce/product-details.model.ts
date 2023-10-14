@@ -4,6 +4,7 @@ interface Products {
     p_name: string;
     p_detail: string;
     p_img: string;
+    p_comment: string;
 }
 
 export type productsType = Products[];

@@ -25,8 +25,5 @@ export class ProductDetailsComponent implements OnInit {
   getAllProducts(){
     return this.productsService.getAllproduct();
   }
-  addComment() {
-    // Make a POST request to the database to add the new comment
-    return this.productsService.addComment();
-  }
+ 
 }

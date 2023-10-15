@@ -19,7 +19,7 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
     //this.productId = this.productsService.getProductById(this.route.snapshot.paramMap.get('id'));
     this.productId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.product = this.productsService.getAllproduct().find(x => x.p_id == 14)
+    this.product = this.productsService.getAllproduct().find(x => x.p_id == 13)
     console.log(this.product);
   }
   getAllProducts(){
